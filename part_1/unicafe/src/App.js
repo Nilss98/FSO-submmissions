@@ -6,7 +6,7 @@ const Button = ({ handleClick, name }) => {
   )
 }
 
-const Statistics = ({ sGood, sNeutral, sBad}) => {
+const Statistics = ({ sGood, sNeutral, sBad }) => {
   const average = ((sGood*1 + sBad*-1)/(sGood + sNeutral + sBad)).toFixed(1)
   const positive = ((sGood / (sGood + sNeutral + sBad))*100).toFixed(1) + "%"
 
